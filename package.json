@@ -17,7 +17,7 @@
   "dependencies": {
     "@tensorflow/tfjs": "^0.14.1",
     "debug": "^4.1.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "mnist-data": "^1.2.6"
   },
   "devDependencies": {

@@ -1,0 +1,31 @@
+{
+  "name": "@neuIOT11b/smart-electricity-meter",
+  "version": "0.0.1",
+  "description": "Recognise digits of an electricity meter",
+  "main": "src/index.js",
+  "repository": "https://github.com/tomitheninja/iot-smart-electricity-meter.git",
+  "author": "<Südi Tamás>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node src",
+    "start-browser": "cross-env TF_DISABLE_NODE=true yarn start",
+    "start-gpu": "cross-env TF_ENABLE_GPU=true yarn start",
+    "debug": "cross-env DEBUG=* yarn start",
+    "debug-gpu": "cross-env DEBUG=* yarn start-gpu"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.14.1",
+    "debug": "^4.1.1",
+    "lodash": "^4.17.11",
+    "mnist-data": "^1.2.6"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  },
+  "optionalDependencies": {
+    "@tensorflow/tfjs-node": "^0.2.1",
+    "@tensorflow/tfjs-node-gpu": "^0.2.1",
+    "@types/debug": "^0.0.31"
+  }
+}
